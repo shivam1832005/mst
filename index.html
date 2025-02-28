@@ -9,21 +9,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             font-family: 'Poppins', sans-serif;
             text-align: center;
             color: #f1f1f1;
             flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
         }
         .btn {
             margin-top: 20px;
-            padding: 15px 25px;
-            font-size: 1.2rem;
+            padding: 12px 20px;
+            font-size: 1rem;
             background-color: #ff416c;
             border: none;
             color: white;
@@ -36,7 +38,7 @@
             transform: scale(1.1);
         }
         .animated-text {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-top: 15px;
             color: #ff9a8b;
             font-weight: bold;
@@ -45,6 +47,30 @@
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .btn {
+                font-size: 0.9rem;
+                padding: 10px 18px;
+            }
+            .animated-text {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+            .btn {
+                font-size: 0.8rem;
+                padding: 8px 15px;
+            }
+            .animated-text {
+                font-size: 0.9rem;
+            }
         }
     </style>
     <script>
